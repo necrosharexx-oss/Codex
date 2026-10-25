@@ -1,0 +1,293 @@
+/* ============================================================
+   Michael Page Design System — styles.css
+   Tokens (CSS custom properties) + component classes.
+   All components are styled through the `mp-` class vocabulary
+   below; consumers should wrap their app in `.mp-root`.
+   ============================================================ */
+
+:root,
+.mp-root {
+  /* Core brand */
+  --mp-confident-blue: #22174e;
+  --mp-energised-blue: #6059ff;
+  --mp-white: #ffffff;
+  --mp-energised-blue-t1: #f7f7ff;
+  --mp-energised-blue-t2: #e5e0f9;
+
+  /* Recruitment secondary */
+  --mp-ava-aqua: #8fe9ff;
+  --mp-monty-mint: #abf4ab;
+  --mp-luca-lilac: #e19fff;
+  --mp-carson-coral: #ff7061;
+  --mp-siena-sand: #ffc88f;
+  --mp-lucy-lemon: #ffffa9;
+
+  /* Enterprise secondary */
+  --mp-peyton-plum: #840660;
+  --mp-eli-emerald: #265149;
+  --mp-iona-indigo: #451968;
+  --mp-lucy-lemon-50: #feffd8;
+
+  /* Page Executive secondary */
+  --mp-gigi-gold: #ddbc72;
+  --mp-riley-rose: #ffcfe1;
+
+  /* Semantic neutrals */
+  --mp-ink: #22174e;
+  --mp-slate: #5a5570;
+  --mp-mist: #e7e6ee;
+  --mp-cloud: #f4f4f8;
+
+  /* Semantic roles */
+  --mp-bg: var(--mp-white);
+  --mp-surface: var(--mp-white);
+  --mp-text: var(--mp-ink);
+  --mp-text-muted: var(--mp-slate);
+  --mp-accent: var(--mp-energised-blue);
+  --mp-border: var(--mp-mist);
+
+  /* Type — Aptos across the system. Headings use Aptos Bold (weight 700),
+     body uses Aptos regular. system-ui is the fallback. */
+  --mp-font-heading: "Aptos", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mp-font-body: "Aptos", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Radius */
+  --mp-radius-sm: 6px;
+  --mp-radius-md: 12px;
+  --mp-radius-lg: 20px;
+  --mp-radius-pill: 999px;
+
+  /* Spacing */
+  --mp-space-xs: 4px;
+  --mp-space-sm: 8px;
+  --mp-space-md: 16px;
+  --mp-space-lg: 24px;
+  --mp-space-xl: 40px;
+
+  /* Elevation */
+  --mp-shadow-sm: 0 1px 2px rgba(34, 23, 78, 0.08);
+  --mp-shadow-md: 0 4px 16px rgba(34, 23, 78, 0.1);
+  --mp-shadow-lg: 0 12px 32px rgba(34, 23, 78, 0.14);
+}
+
+.mp-root {
+  font-family: var(--mp-font-body);
+  color: var(--mp-text);
+  background: var(--mp-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Typography ---------- */
+.mp-heading {
+  font-family: var(--mp-font-heading);
+  font-weight: 700;
+  color: var(--mp-ink);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0;
+}
+.mp-heading--title { font-size: 3.5rem; }
+.mp-heading--subtitle { font-size: 2.5rem; }
+.mp-heading--heading { font-size: 2rem; }
+.mp-heading--bodyHeading { font-size: 1.5rem; }
+.mp-heading--sectionHeader {
+  font-size: 1.125rem;
+  font-family: var(--mp-font-body);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.mp-text { font-family: var(--mp-font-body); font-size: 1rem; color: var(--mp-text); margin: 0; }
+.mp-text--muted { color: var(--mp-text-muted); }
+.mp-text--caption { font-size: 0.8125rem; color: var(--mp-text-muted); }
+.mp-text--quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--mp-energised-blue);
+  border-left: 3px solid var(--mp-energised-blue);
+  padding-left: var(--mp-space-md);
+}
+
+/* ---------- Button ---------- */
+.mp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--mp-space-sm);
+  font-family: var(--mp-font-body);
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: var(--mp-radius-pill);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease,
+    transform 0.05s ease;
+  white-space: nowrap;
+}
+.mp-btn:active { transform: translateY(1px); }
+.mp-btn:focus-visible {
+  outline: 3px solid var(--mp-energised-blue-t2);
+  outline-offset: 2px;
+}
+.mp-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.mp-btn--sm { font-size: 0.8125rem; padding: 6px 16px; }
+.mp-btn--md { font-size: 0.9375rem; padding: 10px 22px; }
+.mp-btn--lg { font-size: 1.0625rem; padding: 14px 30px; }
+
+.mp-btn--primary { background: var(--mp-energised-blue); color: var(--mp-white); }
+.mp-btn--primary:hover:not(:disabled) { background: #4c45e6; }
+
+.mp-btn--secondary {
+  background: var(--mp-confident-blue);
+  color: var(--mp-white);
+}
+.mp-btn--secondary:hover:not(:disabled) { background: #180f39; }
+
+.mp-btn--outline {
+  background: transparent;
+  color: var(--mp-confident-blue);
+  border-color: var(--mp-confident-blue);
+}
+.mp-btn--outline:hover:not(:disabled) {
+  background: var(--mp-confident-blue);
+  color: var(--mp-white);
+}
+
+.mp-btn--ghost { background: transparent; color: var(--mp-energised-blue); }
+.mp-btn--ghost:hover:not(:disabled) { background: var(--mp-energised-blue-t1); }
+
+/* ---------- Badge / Tag ---------- */
+.mp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mp-font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--mp-radius-pill);
+  line-height: 1.4;
+}
+.mp-badge--neutral { background: var(--mp-cloud); color: var(--mp-ink); }
+.mp-badge--accent { background: var(--mp-energised-blue-t2); color: var(--mp-energised-blue); }
+.mp-badge--aqua { background: var(--mp-ava-aqua); color: var(--mp-confident-blue); }
+.mp-badge--mint { background: var(--mp-monty-mint); color: var(--mp-eli-emerald); }
+.mp-badge--lilac { background: var(--mp-luca-lilac); color: var(--mp-iona-indigo); }
+.mp-badge--coral { background: var(--mp-carson-coral); color: var(--mp-white); }
+.mp-badge--sand { background: var(--mp-siena-sand); color: var(--mp-confident-blue); }
+.mp-badge--lemon { background: var(--mp-lucy-lemon); color: var(--mp-confident-blue); }
+
+/* ---------- Card ---------- */
+.mp-card {
+  background: var(--mp-surface);
+  border: 1px solid var(--mp-border);
+  border-radius: var(--mp-radius-lg);
+  padding: var(--mp-space-lg);
+  box-shadow: var(--mp-shadow-sm);
+}
+.mp-card--elevated { box-shadow: var(--mp-shadow-md); border-color: transparent; }
+.mp-card--feature {
+  background: var(--mp-confident-blue);
+  color: var(--mp-white);
+  border-color: transparent;
+}
+.mp-card--feature .mp-heading,
+.mp-card--feature .mp-text { color: var(--mp-white); }
+.mp-card__media {
+  border-radius: var(--mp-radius-md);
+  overflow: hidden;
+  margin-bottom: var(--mp-space-md);
+}
+.mp-card__title { margin-bottom: var(--mp-space-sm); }
+.mp-card__body { color: var(--mp-text-muted); }
+.mp-card--feature .mp-card__body { color: rgba(255, 255, 255, 0.82); }
+.mp-card__footer {
+  margin-top: var(--mp-space-lg);
+  display: flex;
+  gap: var(--mp-space-sm);
+  align-items: center;
+}
+
+/* ---------- Input ---------- */
+.mp-field { display: flex; flex-direction: column; gap: 6px; }
+.mp-field__label { font-size: 0.875rem; font-weight: 600; color: var(--mp-ink); }
+.mp-input {
+  font-family: var(--mp-font-body);
+  font-size: 0.9375rem;
+  color: var(--mp-ink);
+  background: var(--mp-white);
+  border: 1.5px solid var(--mp-border);
+  border-radius: var(--mp-radius-md);
+  padding: 11px 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mp-input::placeholder { color: #a7a3b6; }
+.mp-input:focus {
+  outline: none;
+  border-color: var(--mp-energised-blue);
+  box-shadow: 0 0 0 3px var(--mp-energised-blue-t2);
+}
+.mp-input--error { border-color: var(--mp-carson-coral); }
+.mp-field__hint { font-size: 0.75rem; color: var(--mp-text-muted); }
+.mp-field__hint--error { color: var(--mp-carson-coral); }
+
+/* ---------- Checkbox ---------- */
+.mp-checkbox { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9375rem; }
+.mp-checkbox input { position: absolute; opacity: 0; width: 0; height: 0; }
+.mp-checkbox__box {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--mp-mist);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mp-white);
+  transition: all 0.15s ease;
+  flex: none;
+}
+.mp-checkbox input:checked + .mp-checkbox__box {
+  background: var(--mp-energised-blue);
+  border-color: var(--mp-energised-blue);
+}
+.mp-checkbox input:focus-visible + .mp-checkbox__box {
+  box-shadow: 0 0 0 3px var(--mp-energised-blue-t2);
+}
+.mp-checkbox__box svg { opacity: 0; }
+.mp-checkbox input:checked + .mp-checkbox__box svg { opacity: 1; }
+
+/* ---------- Alert ---------- */
+.mp-alert {
+  display: flex;
+  gap: var(--mp-space-md);
+  padding: var(--mp-space-md);
+  border-radius: var(--mp-radius-md);
+  font-size: 0.9375rem;
+  align-items: flex-start;
+}
+.mp-alert__title { font-weight: 700; margin: 0 0 2px; }
+.mp-alert--info { background: var(--mp-energised-blue-t1); color: var(--mp-confident-blue); }
+.mp-alert--success { background: var(--mp-monty-mint); color: var(--mp-eli-emerald); }
+.mp-alert--warning { background: var(--mp-siena-sand); color: var(--mp-confident-blue); }
+.mp-alert--error { background: var(--mp-carson-coral); color: var(--mp-white); }
+
+/* ---------- Icon ---------- */
+.mp-icon { display: inline-block; vertical-align: middle; line-height: 0; }
+.mp-icon svg { display: block; width: 100%; height: 100%; fill: currentColor; }
+
+/* ---------- Avatar ---------- */
+.mp-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--mp-radius-pill);
+  background: var(--mp-energised-blue);
+  color: var(--mp-white);
+  font-family: var(--mp-font-body);
+  font-weight: 700;
+  overflow: hidden;
+}
+.mp-avatar img { width: 100%; height: 100%; object-fit: cover; }

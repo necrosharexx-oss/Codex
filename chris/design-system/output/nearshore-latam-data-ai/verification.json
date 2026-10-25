@@ -1,0 +1,141 @@
+{
+  "fonts": [
+    {
+      "family": "Aptos",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "Aptos",
+      "weight": "700",
+      "status": "loaded"
+    }
+  ],
+  "images": [
+    {
+      "asset": "Michael Page",
+      "loaded": true
+    },
+    {
+      "asset": "benchmarks",
+      "loaded": true
+    },
+    {
+      "asset": "calendar",
+      "loaded": true
+    },
+    {
+      "asset": "user",
+      "loaded": true
+    },
+    {
+      "asset": "star",
+      "loaded": true
+    },
+    {
+      "asset": "check",
+      "loaded": true
+    },
+    {
+      "asset": "sitemap 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "wand-magic-sparkles 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "wallet 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "users-gear 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "repeat 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "briefcase",
+      "loaded": true
+    },
+    {
+      "asset": "calendar",
+      "loaded": true
+    },
+    {
+      "asset": "info",
+      "loaded": true
+    },
+    {
+      "asset": "alert-triangle",
+      "loaded": true
+    },
+    {
+      "asset": "mail",
+      "loaded": true
+    },
+    {
+      "asset": "arrow-right",
+      "loaded": true
+    },
+    {
+      "asset": "user",
+      "loaded": true
+    },
+    {
+      "asset": "arrow-right",
+      "loaded": true
+    }
+  ],
+  "tables": [
+    [
+      [
+        "Junior",
+        "$20/hr",
+        "$3,200"
+      ],
+      [
+        "Semi-Senior",
+        "$25/hr",
+        "$4,000"
+      ],
+      [
+        "Senior",
+        "$35/hr",
+        "$5,600"
+      ]
+    ],
+    [
+      [
+        "Junior",
+        "$25/hr",
+        "$4,000"
+      ],
+      [
+        "Semi-Senior",
+        "$35/hr",
+        "$5,600"
+      ],
+      [
+        "Senior",
+        "$45/hr",
+        "$7,200"
+      ]
+    ]
+  ],
+  "dimensions": {
+    "width": 816,
+    "height": 1056
+  },
+  "overflow": [],
+  "textOverflow": [],
+  "mobile": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "width": 358,
+    "left": 16,
+    "right": 374
+  }
+}

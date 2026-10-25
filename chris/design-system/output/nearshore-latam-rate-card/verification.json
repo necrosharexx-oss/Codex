@@ -1,0 +1,85 @@
+{
+  "fonts": [
+    {
+      "family": "Aptos",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "Aptos",
+      "weight": "700",
+      "status": "loaded"
+    }
+  ],
+  "images": [
+    {
+      "asset": "Michael Page",
+      "loaded": true
+    },
+    {
+      "asset": "calendar",
+      "loaded": true
+    },
+    {
+      "asset": "check",
+      "loaded": true
+    },
+    {
+      "asset": "users-gear 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "user-shield 3.svg",
+      "loaded": true
+    },
+    {
+      "asset": "arrow-right",
+      "loaded": true
+    },
+    {
+      "asset": "mail",
+      "loaded": true
+    }
+  ],
+  "tables": [
+    [
+      [
+        "Junior",
+        "$14-$21",
+        "$2,150-$3,450"
+      ],
+      [
+        "Semi-Senior",
+        "$19-$30",
+        "$3,000-$4,700"
+      ],
+      [
+        "Senior",
+        "$23-$35",
+        "$3,700-$5,650"
+      ]
+    ],
+    [
+      [
+        "Junior",
+        "$9-$14",
+        "$1,400-$2,250"
+      ],
+      [
+        "Semi-Senior",
+        "$15-$19",
+        "$2,350-$3,000"
+      ],
+      [
+        "Senior",
+        "$14-$43",
+        "$2,250-$6,800"
+      ]
+    ]
+  ],
+  "dimensions": {
+    "width": 816,
+    "height": 1056
+  },
+  "overflow": []
+}

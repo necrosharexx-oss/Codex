@@ -1,0 +1,26 @@
+{
+  "page_count": 2,
+  "pages": [
+    {
+      "page": 1,
+      "width_points": 612.0,
+      "height_points": 792.0,
+      "required_content_verified": true
+    },
+    {
+      "page": 2,
+      "width_points": 612.0,
+      "height_points": 792.0,
+      "required_content_verified": true
+    }
+  ],
+  "embedded_fonts": [
+    "/AAAAAA+Aptos-Bold",
+    "/BAAAAA+Aptos"
+  ],
+  "contact_links": [
+    "mailto:juanserrano@michaelpage.com.co"
+  ],
+  "pdf_bytes": 320483,
+  "rendered_for_visual_review": true
+}

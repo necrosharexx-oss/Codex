@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Michael Page nearshore LATAM rate card for software developers and QA / test engineers, based on supplied 2026 placement rates.">
+  <title>Michael Page | Nearshore LATAM Rate Card - Dev &amp; QA</title>
+  <!-- Standalone exports embed the official font, tokens, logos, and icon assets. -->
+  <style>/*__BRAND_STYLES__*/</style>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: var(--mp-cloud); }
+    #flyer {
+      width: 816px;
+      height: 1056px;
+      margin: 24px auto;
+      display: grid;
+      grid-template-rows: 100px 210px 496px 100px 150px;
+      overflow: hidden;
+      letter-spacing: 0;
+      box-shadow: var(--mp-shadow-lg);
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    #flyer * { letter-spacing: 0; }
+    #masthead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 48px;
+      border-top: 6px solid var(--mp-energised-blue);
+    }
+    #logo { width: 252px; height: auto; display: block; }
+    #brand-line {
+      border-left: 1px solid var(--mp-mist);
+      padding-left: 24px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: left;
+    }
+    #brand-line span { display: block; }
+    #brand-line span:last-child { font-weight: 400; color: var(--mp-slate); }
+    #intro {
+      background: var(--mp-confident-blue);
+      color: var(--mp-white);
+      padding: 25px 48px;
+    }
+    #intro h1 { font-size: 48px; line-height: 1.06; margin: 0; color: var(--mp-white); }
+    #intro h2 { font-size: 27px; line-height: 1.12; margin: 8px 0 20px; font-weight: 400; color: var(--mp-ava-aqua); }
+    #advantages { display: flex; align-items: center; gap: 26px; margin-bottom: 12px; }
+    #advantages span { display: inline-flex; align-items: center; gap: 9px; font-size: 16px; line-height: 1.3; }
+    #advantages img { width: 19px; height: 19px; }
+    #intro p { color: var(--mp-white); font-size: 16px; line-height: 1.4; margin: 0; }
+    #rates { padding: 27px 48px 14px; display: flex; flex-direction: column; gap: 22px; }
+    #rates section { flex: 1; min-height: 0; }
+    #rates section > header { display: flex; justify-content: space-between; align-items: center; height: 43px; margin-bottom: 11px; }
+    #rates section > header > div { display: flex; align-items: center; gap: 12px; }
+    #rates section > header img { width: 35px; height: 32px; object-fit: contain; }
+    #rates h2 { font-size: 23px; margin: 0; line-height: 1.15; }
+    #rates small { color: var(--mp-slate); font-size: 13px; white-space: nowrap; }
+    #rates table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+    #rates col:nth-child(1) { width: 31%; }
+    #rates col:nth-child(2) { width: 30%; }
+    #rates col:nth-child(3) { width: 39%; }
+    #rates th, #rates td { text-align: left; padding: 0 16px; }
+    #rates thead { height: 34px; background: var(--mp-cloud); color: var(--mp-slate); }
+    #rates th { font-size: 13px; font-weight: 400; }
+    #rates tbody tr { height: 44px; border-bottom: 1px solid var(--mp-mist); }
+    #rates tbody td:first-child { font-size: 17px; }
+    #rates tbody td:nth-child(2) { font-weight: 700; font-size: 25px; color: var(--mp-energised-blue); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    #rates tbody td:nth-child(3) { font-size: 22px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    #pricing-notes { padding: 8px 48px 20px; }
+    #pricing-notes > div { padding-top: 13px; border-top: 2px solid var(--mp-energised-blue-t2); }
+    #pricing-notes p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--mp-slate); }
+    #pricing-notes p:first-child { font-weight: 700; color: var(--mp-confident-blue); }
+    #contact { background: var(--mp-confident-blue); color: var(--mp-white); padding: 23px 48px; }
+    #cta { color: var(--mp-white); text-decoration: none; display: flex; align-items: center; justify-content: space-between; font-weight: 700; font-size: 29px; line-height: 1.15; }
+    #cta img { width: 35px; height: 35px; }
+    #contact-row { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; gap: 24px; }
+    #contact-name { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.35; }
+    #contact-name span { display: block; font-size: 13px; font-weight: 400; color: var(--mp-energised-blue-t2); }
+    #email { display: inline-flex; align-items: center; gap: 8px; color: var(--mp-white); font-size: 15px; text-decoration: none; white-space: nowrap; }
+    #email img { width: 19px; height: 19px; }
+    a:focus-visible { outline: 2px solid var(--mp-ava-aqua); outline-offset: 4px; }
+    @page { size: letter; margin: 0; }
+    @media print {
+      html, body { width: 816px; height: 1056px; background: var(--mp-white); }
+      #flyer { margin: 0; box-shadow: none; }
+    }
+    @media screen and (max-width: 840px) {
+      body { width: 816px; }
+      #flyer { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <article id="flyer" class="mp-root" aria-label="Nearshore LATAM Rate Card - Dev and QA">
+    <header id="masthead">
+      <img id="logo" src="../../logos/MichaelPage_colour.png" alt="Michael Page">
+      <div id="brand-line"><span>TECHNOLOGY</span><span>BY PAGEGROUP</span></div>
+    </header>
+    <section id="intro" aria-labelledby="flyer-title">
+      <h1 id="flyer-title" class="mp-heading">Nearshore LATAM</h1>
+      <h2>Rate card - Dev &amp; QA</h2>
+      <div id="advantages">
+        <span><img data-icon="calendar" alt="">Same time zone as the US.</span>
+        <span><img data-icon="check" alt="">English-speaking.</span>
+      </div>
+      <p>Rates from real 2026 placements - not list prices.</p>
+    </section>
+    <main id="rates">
+      <section aria-labelledby="dev-title">
+        <header>
+          <div><img data-library-icon="users-gear 3.svg" alt=""><h2 id="dev-title">Software Developers</h2></div>
+          <small>Sample n = 91</small>
+        </header>
+        <table aria-label="Software developer rates in USD">
+          <colgroup><col><col><col></colgroup>
+          <thead><tr><th scope="col">Level</th><th scope="col">USD / hour</th><th scope="col">USD / month</th></tr></thead>
+          <tbody>
+            <tr><td>Junior</td><td>$14-$21</td><td>$2,150-$3,450</td></tr>
+            <tr><td>Semi-Senior</td><td>$19-$30</td><td>$3,000-$4,700</td></tr>
+            <tr><td>Senior</td><td>$23-$35</td><td>$3,700-$5,650</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section aria-labelledby="qa-title">
+        <header>
+          <div><img data-library-icon="user-shield 3.svg" alt=""><h2 id="qa-title">QA / Test Engineers</h2></div>
+          <small>Sample n = 26</small>
+        </header>
+        <table aria-label="QA and test engineer rates in USD">
+          <colgroup><col><col><col></colgroup>
+          <thead><tr><th scope="col">Level</th><th scope="col">USD / hour</th><th scope="col">USD / month</th></tr></thead>
+          <tbody>
+            <tr><td>Junior</td><td>$9-$14</td><td>$1,400-$2,250</td></tr>
+            <tr><td>Semi-Senior</td><td>$15-$19</td><td>$2,350-$3,000</td></tr>
+            <tr><td>Senior</td><td>$14-$43</td><td>$2,250-$6,800</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <aside id="pricing-notes" aria-label="Pricing notes">
+      <div>
+        <p>Fully-loaded client rate (consultant + MP service).</p>
+        <p>Monthly = full-time dedicated. Hourly @ 160 hrs/mo.</p>
+        <p>USD, FX approx 2026-10-01. Indicative, not a quote.</p>
+      </div>
+    </aside>
+    <footer id="contact">
+      <a id="cta" href="https://outlook.office.com/bookwithme/user/e9a23e39dc8f4a2d8f5b1c9d400abaaa%40michaelpage.com.co?bookingcode=51af70f6-4c6a-4863-92c6-ca45f44380a1&amp;anonymous&amp;ismsaljsauthenabled" title="Book a conversation with Christian">Let's scope your squad<img data-icon="arrow-right" alt=""></a>
+      <div id="contact-row">
+        <p id="contact-name">Christian<span>Michael Page - Technology</span></p>
+        <a id="email" href="mailto:christianguillermo@michaelpage.com.co"><img data-icon="mail" alt="">christianguillermo@michaelpage.com.co</a>
+      </div>
+    </footer>
+  </article>
+</body>
+</html>
